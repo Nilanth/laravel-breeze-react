@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Laravel Breeze - Create React App Edition 🏝️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This repository is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) application / authentication starter kit frontend in [Create React App](https://create-react-app.dev). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful CRA frontend with a powerful Laravel backend.
 
-In the project directory, you can run:
+## Official Documentation
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+First, create a React App compatible Laravel backend by installing Laravel Breeze into a [fresh Laravel application](https://laravel.com/docs/installation) and installing Breeze's API scaffolding:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+# Create the Laravel application...
+laravel new react-backend
 
-### `npm test`
+cd react-backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install Breeze and dependencies...
+composer require laravel/breeze
 
-### `npm run build`
+php artisan breeze:install api
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Next, ensure that your application's `APP_URL` and `FRONTEND_URL` environment variables are set to `http://localhost:8000` and `http://localhost:3000`, respectively.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After defining the appropriate environment variables, you may serve the Laravel application using the `serve` Artisan command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Serve the application...
+php artisan serve
+```
 
-### `npm run eject`
+Next, clone this repository and install its dependencies with `yarn install` or `npm install`. Then, copy the `.env.example` file to `.env` and supply the URL of your backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+REACT_APP_BACKEND_URL=http://localhost:8000
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Finally, run the application via `yarn start`. The application will be available at `http://localhost:3000`:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+yarn start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> Note: Currently, we recommend using `localhost` during local development of your backend and frontend to avoid CORS "Same-Origin" issues.
 
-## Learn More
+### Authentication Hook
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This Create React application contains a custom `useAuth` React hook, designed to abstract all authentication logic away from your pages. In addition, the hook can be used to access the currently authenticated user:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```js
+const ExamplePage = () => {
+    const { logout, user } = useAuth({ middleware: 'auth' })
 
-### Code Splitting
+    return (
+        <>
+            <p>{user?.name}</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+            <button onClick={logout}>Sign out</button>
+        </>
+    )
+}
 
-### Analyzing the Bundle Size
+export default ExamplePage
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Built with
 
-### Making a Progressive Web App
+- [React](https://reactjs.org)
+- [Create React App v5](https://create-react-app.dev)
+- [React Router v6](https://reactrouter.com): Routing for React
+- [Tailwind](https://tailwindcss.com): for UI
+- [SWR](https://swr.vercel.app/): React Hooks for Data Fetching
+- [Axios](https://www.npmjs.com/package/axios): Promise based HTTP client for the browser and node.js
+- [Headlessui/react](https://headlessui.dev): for UI Components
+- [Vercel](http://vercel.com): for hosting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Security Vulnerabilities
 
-### Deployment
+Please review [our security policy](.github/SECURITY.md) on how to report security vulnerabilities.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Credits
 
-### `npm run build` fails to minify
+-   [Nilanth](https://github.com/nilanth)
+-   [All Contributors](../../contributors)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+## Deploy
+
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNilanth%2Flaravel-breeze-cra"><img src="https://vercel.com/button" alt="Deploy with Vercel" height="37.5px" />
+</a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/Nilanth/laravel-breeze-cra">
+<img src="https://www.netlify.com/img/deploy/button.svg" height="37.5px" />
+</a>
+
+## Support
+
+Laravel Breeze Create React App needs a ⭐️ from you. Don't forget to leave a star ⭐️
