@@ -103,4 +103,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 ## Support
 
-Laravel Breeze Create React App needs a ⭐️ from you. Don't forget to leave a star ⭐️
+Laravel Breeze React needs a ⭐️ from you. Don't forget to leave a star ⭐️
