@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This repository is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) application / authentication starter kit frontend in [Create React App](https://create-react-app.dev). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful CRA frontend with a powerful Laravel backend.
+This repository is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) authentication template for [Create React App](https://create-react-app.dev). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful React frontend with a powerful Laravel backend.
 
-## Official Documentation
+## Quick Start
 
 ### Installation
 
@@ -50,7 +50,7 @@ yarn start
 This Create React application contains a custom `useAuth` React hook, designed to abstract all authentication logic away from your pages. In addition, the hook can be used to access the currently authenticated user:
 
 ```js
-const ExamplePage = () => {
+const Dashboard = () => {
     const { logout, user } = useAuth({ middleware: 'auth' })
 
     return (
@@ -62,7 +62,7 @@ const ExamplePage = () => {
     )
 }
 
-export default ExamplePage
+export default Dashboard
 ```
 
 ## Built with
