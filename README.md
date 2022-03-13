@@ -1,8 +1,8 @@
-# Laravel Breeze - Create React App Edition 🏝️
+# Laravel Breeze - React Edition
 
 ## Introduction
 
-Laravel Breeze CRA is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) authentication template for [Create React App](https://create-react-app.dev). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful React frontend with a powerful Laravel backend.
+Laravel Breeze React is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) authentication template for [Create React App](https://create-react-app.dev). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful React frontend with a powerful Laravel backend.
 
 ## Quick Start
 
