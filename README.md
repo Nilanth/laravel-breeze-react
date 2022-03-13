@@ -85,7 +85,7 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 Please review [our security policy](.github/SECURITY.md) on how to report security vulnerabilities.
 
 ## Credits
-
+-   [breeze-next](https://github.com/laravel/breeze-next)
 -   [Nilanth](https://github.com/nilanth)
 -   [All Contributors](../../contributors)
 
