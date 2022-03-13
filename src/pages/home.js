@@ -46,7 +46,7 @@ function Home() {
                     </div>
 
                     <div className="mt-8 bg-white text-5xl p-2">
-                        Laravel Breeze + Create React App template
+                        Laravel Breeze Create React App Template
                     </div>
                 </div>
             </div>
