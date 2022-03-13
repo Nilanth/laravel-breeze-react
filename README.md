@@ -2,6 +2,8 @@
 
 ## Introduction
 
+> Laravel Breeze React is inspired from [breeze-next](https://github.com/laravel/breeze-next). 
+
 Laravel Breeze React is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) authentication template for [Create React App](https://create-react-app.dev). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful React frontend with a powerful Laravel backend.
 
 ## Quick Start
@@ -85,7 +87,6 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 Please review [our security policy](.github/SECURITY.md) on how to report security vulnerabilities.
 
 ## Credits
--   [breeze-next](https://github.com/laravel/breeze-next)
 -   [Nilanth](https://github.com/nilanth)
 -   [All Contributors](../../contributors)
 
