@@ -2,6 +2,25 @@
   "name": "laravel-breeze-cra",
   "version": "0.1.0",
   "private": true,
+  "author": "Nilanth",
+  "keywords": [
+    "react",
+    "react-router",
+    "swr",
+    "tailwindcss",
+    "vercel",
+    "axios",
+    "react-hooks",
+    "laravel",
+    "sanctum"
+  ],
+  "description": "Laravel Breeze CRA is a Create React App template for laravel sanctum based authentication ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nilanth/larave-breeze-cra",
+    "directory": "/"
+  },
+  "license": "MIT",
   "dependencies": {
     "@headlessui/react": "^1.5.0",
     "@tailwindcss/forms": "^0.5.0",
