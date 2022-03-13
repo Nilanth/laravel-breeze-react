@@ -92,13 +92,13 @@ Please review [our security policy](.github/SECURITY.md) on how to report securi
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
 ## Deploy
 
-<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNilanth%2Flaravel-breeze-cra"><img src="https://vercel.com/button" alt="Deploy with Vercel" height="37.5px" />
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNilanth%2Flaravel-breeze-react"><img src="https://vercel.com/button" alt="Deploy with Vercel" height="37.5px" />
 </a>
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/Nilanth/laravel-breeze-cra">
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/Nilanth/laravel-breeze-react">
 <img src="https://www.netlify.com/img/deploy/button.svg" height="37.5px" />
 </a>
 
