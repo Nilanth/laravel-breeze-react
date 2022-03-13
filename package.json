@@ -14,7 +14,7 @@
     "laravel",
     "sanctum"
   ],
-  "description": "Laravel Breeze CRA is a Create React App template for laravel sanctum based authentication ",
+  "description": "Laravel Breeze CRA is a Create React App template for laravel sanctum based authentication",
   "repository": {
     "type": "git",
     "url": "https://github.com/Nilanth/larave-breeze-cra",
