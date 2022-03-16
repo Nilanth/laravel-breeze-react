@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "react-app"
+  ],
+  "rules": {
+    "template-curly-spacing": "off",
+    "indent": [
+      "warn",
+      2,
+      {
+        "ignoredNodes": ["TemplateLiteral"],
+        "SwitchCase": 1 }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "lines-between-class-members": ["error", "always"] ,
+    "comma-dangle": [ "error", {
+      "arrays": "never",
+      "objects": "never",
+      "imports": "never",
+      "exports": "never",
+      "functions": "ignore"
+    }],
+    "no-confusing-arrow": "error",
+    "no-console": "warn",
+    "no-use-before-define": 1,
+    "prefer-template": 2,
+    "no-restricted-imports": [
+      "error", { "patterns": [ "../*" ]}
+    ],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0}],
+    "max-len": [2, {"code": 120, "tabWidth": 4, "ignoreUrls": true, "comments": 120, "ignorePattern": "import"}],
+    "arrow-spacing": "error",
+    "func-call-spacing": ["error", "never"],
+    "space-infix-ops": ["error", { "int32Hint": false }],
+    "no-nested-ternary": "error"
+  }
+}
