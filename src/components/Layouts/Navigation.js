@@ -8,9 +8,7 @@ import CustomNavLink from 'components/NavLink';
 import {Link} from "react-router-dom";
 
 const Navigation = ({ user }) => {
-
     const { logout } = useAuth()
-
     const [open, setOpen] = useState(false)
 
     return (
@@ -25,7 +23,6 @@ const Navigation = ({ user }) => {
                                     <ApplicationLogo className="block h-10 w-auto fill-current text-gray-600" />
                             </Link>
                         </div>
-
                         {/* Navigation Links */}
                         <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                             <CustomNavLink
@@ -35,7 +32,6 @@ const Navigation = ({ user }) => {
                             </CustomNavLink>
                         </div>
                     </div>
-
                     {/* Settings Dropdown */}
                     <div className="hidden sm:flex sm:items-center sm:ml-6">
                         <Dropdown
@@ -59,14 +55,12 @@ const Navigation = ({ user }) => {
                                     </div>
                                 </button>
                             }>
-
                             {/* Authentication */}
                             <DropdownButton onClick={logout}>
                                 Logout
                             </DropdownButton>
                         </Dropdown>
                     </div>
-
                     {/* Hamburger */}
                     <div className="-mr-2 flex items-center sm:hidden">
                         <button
@@ -99,7 +93,6 @@ const Navigation = ({ user }) => {
                     </div>
                 </div>
             </div>
-
             {/* Responsive Navigation Menu */}
             {open && (
                 <div className="block sm:hidden">
@@ -110,7 +103,6 @@ const Navigation = ({ user }) => {
                             Dashboard
                         </ResponsiveNavLink>
                     </div>
-
                     {/* Responsive Settings Options */}
                     <div className="pt-4 pb-1 border-t border-gray-200">
                         <div className="flex items-center px-4">
@@ -129,7 +121,6 @@ const Navigation = ({ user }) => {
                                     />
                                 </svg>
                             </div>
-
                             <div className="ml-3">
                                 <div className="font-medium text-base text-gray-800">
                                     {user?.name}
@@ -139,7 +130,6 @@ const Navigation = ({ user }) => {
                                 </div>
                             </div>
                         </div>
-
                         <div className="mt-3 space-y-1">
                             {/* Authentication */}
                             <ResponsiveNavButton onClick={logout}>

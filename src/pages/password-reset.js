@@ -12,7 +12,6 @@ import {Link, useParams} from "react-router-dom";
 
 const PasswordReset = () => {
     const params = useParams()
-
     const { resetPassword } = useAuth({ middleware: 'guest' })
 
     const [email, setEmail] = useState('')
@@ -23,7 +22,6 @@ const PasswordReset = () => {
 
     const submitForm = event => {
         event.preventDefault()
-
         resetPassword({
             email,
             password,
@@ -45,18 +43,14 @@ const PasswordReset = () => {
                         <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
                     </Link>
                 }>
-
                 {/* Session Status */}
                 <AuthSessionStatus className="mb-4" status={status} />
-
                 {/* Validation Errors */}
                 <AuthValidationErrors className="mb-4" errors={errors} />
-
                 <form onSubmit={submitForm}>
                     {/* Email Address */}
                     <div>
                         <Label htmlFor="email">Email</Label>
-
                         <Input
                             id="email"
                             type="email"
@@ -67,7 +61,6 @@ const PasswordReset = () => {
                             autoFocus
                         />
                     </div>
-
                     {/* Password */}
                     <div className="mt-4">
                         <Label htmlFor="password">Password</Label>
@@ -80,13 +73,11 @@ const PasswordReset = () => {
                             required
                         />
                     </div>
-
                     {/* Confirm Password */}
                     <div className="mt-4">
                         <Label htmlFor="password_confirmation">
                             Confirm Password
                         </Label>
-
                         <Input
                             id="password_confirmation"
                             type="password"
@@ -98,7 +89,6 @@ const PasswordReset = () => {
                             required
                         />
                     </div>
-
                     <div className="flex items-center justify-end mt-4">
                         <Button>Reset Password</Button>
                     </div>

@@ -34,7 +34,6 @@ const Dropdown = ({
         {({ open }) => (
             <>
                 <Menu.Button as={React.Fragment}>{trigger}</Menu.Button>
-
                 <Transition
                     show={open}
                     enter="transition ease-out duration-200"

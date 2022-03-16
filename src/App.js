@@ -18,13 +18,11 @@ function App() {
               <Route path="/forgot-password" element={<ForgotPassword />} />
               <Route path="/password-reset/:token" element={<PasswordReset />} />
               <Route path="/dashboard" element={<Dashboard />} />
-              <Route
-                  path="*"
-                  element={<NotFoundPage/>}
+              <Route path="*" element={<NotFoundPage/>}
               />
           </Routes>
         </div>
-);
+    );
 }
 
 export default App;

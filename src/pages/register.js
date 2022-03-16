@@ -23,7 +23,6 @@ const Register = () => {
 
     const submitForm = event => {
         event.preventDefault()
-
         register({ name, email, password, password_confirmation, setErrors })
     }
 
@@ -35,15 +34,12 @@ const Register = () => {
                             <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
                     </Link>
                 }>
-
                 {/* Validation Errors */}
                 <AuthValidationErrors className="mb-4" errors={errors} />
-
                 <form onSubmit={submitForm}>
                     {/* Name */}
                     <div>
                         <Label htmlFor="name">Name</Label>
-
                         <Input
                             id="name"
                             type="text"
@@ -54,11 +50,9 @@ const Register = () => {
                             autoFocus
                         />
                     </div>
-
                     {/* Email Address */}
                     <div className="mt-4">
                         <Label htmlFor="email">Email</Label>
-
                         <Input
                             id="email"
                             type="email"
@@ -68,11 +62,9 @@ const Register = () => {
                             required
                         />
                     </div>
-
                     {/* Password */}
                     <div className="mt-4">
                         <Label htmlFor="password">Password</Label>
-
                         <Input
                             id="password"
                             type="password"
@@ -83,13 +75,11 @@ const Register = () => {
                             autoComplete="new-password"
                         />
                     </div>
-
                     {/* Confirm Password */}
                     <div className="mt-4">
                         <Label htmlFor="password_confirmation">
                             Confirm Password
                         </Label>
-
                         <Input
                             id="password_confirmation"
                             type="password"
@@ -101,15 +91,13 @@ const Register = () => {
                             required
                         />
                     </div>
-
                     <div className="flex items-center justify-end mt-4">
                         <NavLink
                             to="/login"
                             className="underline text-sm text-gray-600 hover:text-gray-900"
                         >
-                                Already registered?
+                            Already registered?
                         </NavLink>
-
                         <Button className="ml-4">Register</Button>
                     </div>
                 </form>
