@@ -1,5 +1,10 @@
 # Laravel Breeze - React Edition
 
+<p align="left">
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="License"></a>
+<a href="https://github.com/nilanth/laravel-breeze-react/releases"><img src="https://img.shields.io/github/release/nilanth/laravel-breeze-react.svg?style=flat-square" alt="Latest Stable Version"></a>
+</p>
+
 ## Introduction
 
 > Laravel Breeze React is the implementation for react from [breeze-next](https://github.com/laravel/breeze-next). 
