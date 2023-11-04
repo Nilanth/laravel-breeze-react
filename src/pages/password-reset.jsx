@@ -40,7 +40,7 @@ const PasswordReset = () => {
       <AuthCard
         logo={
           <Link to="/">
-            <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+            <ApplicationLogo className="w-40 h-40" />
           </Link>
         }>
         {/* Session Status */}

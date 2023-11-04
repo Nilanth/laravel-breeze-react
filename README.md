@@ -1,4 +1,4 @@
-# Laravel Breeze - React Edition
+# Laravel Breeze - React Edition build with Vite
 
 <p align="left">
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="License"></a>
@@ -9,7 +9,11 @@
 
 > Laravel Breeze React is the implementation for react from [breeze-next](https://github.com/laravel/breeze-next). 
 
-Laravel Breeze React is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) authentication template for [Create React App](https://create-react-app.dev). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful React frontend with a powerful Laravel backend.
+Laravel Breeze React is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) authentication template for [React App](https://react.dev). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful React frontend with a powerful Laravel backend.
+
+## Vite
+
+Laravel Breeze React is now turbocharged with [Vite](https://vitejs.dev/) for rapid compilation and efficient production builds. To know more about Vite check out [this article](https://dev.to/nilanth/use-vite-for-react-apps-instead-of-cra-3pkg).
 
 ## Quick Start
 
@@ -47,7 +51,7 @@ REACT_APP_BACKEND_URL=http://localhost:8000
 Finally, run the application via `yarn start`. The application will be available at `http://localhost:3000`:
 
 ```
-yarn start
+yarn start --host localhost --port 3000
 ```
 
 > Note: Currently, we recommend using `localhost` during local development of your backend and frontend to avoid CORS "Same-Origin" issues.
@@ -74,8 +78,8 @@ export default Dashboard
 
 ## Built with
 
-- [React](https://reactjs.org)
-- [Create React App v5](https://create-react-app.dev)
+- [React 18](https://reactjs.org)
+- [Vite](https://vitejs.dev/)
 - [React Router v6](https://reactrouter.com): Routing for React
 - [Tailwind](https://tailwindcss.com): for UI
 - [SWR](https://swr.vercel.app/): React Hooks for Data Fetching

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks/auth'
 import reactLogo from 'images/logo512.png';
+import ApplicationLogo from 'components/ApplicationLogo';
 
 function Home() {
   const { user } = useAuth({ middleware: 'guest' })
@@ -50,9 +51,10 @@ function Home() {
             src={reactLogo}
             className="h-16 w-auto text-gray-700 sm:h-20 ml-10"
           />
+          <ApplicationLogo className="h-16 sm:h-20 ml-10"/>
         </div>
         <div className="mt-8 bg-white text-5xl p-2">
-          Laravel Breeze Create React App Template
+          Laravel Breeze React Vite Template
         </div>
       </div>
     </div>
