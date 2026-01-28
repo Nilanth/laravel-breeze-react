@@ -14,7 +14,7 @@ export const useAuth = ({middleware, redirectIfAuthenticated} = {}) => {
       .catch(error => {
         if (error.response.status !== 409) throw error
 
-        mutate('/verify-email')
+        mutate('/verify-emails')
       }),
   {
     revalidateIfStale: false,
